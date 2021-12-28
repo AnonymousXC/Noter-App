@@ -18,7 +18,7 @@ function createWindow() {
     });
 
     win.setTitle('My App');
-    win.loadFile('./styles/main.html');
+    win.loadFile(path.join(__dirname , "../src/styles/main.html"))
     win.webContents.openDevTools();
     win.webContents.on("context-menu" , () => {
         context_menu.popup();
@@ -174,29 +174,29 @@ const menu_temp = [
                 },
                 accelerator: "Ctrl + E",
             },
-            {
-                label: "Find",
-                click: () => {
-                    const findwindow = new BrowserWindow({
-                        height: 200,
-                        width: 300,
-                        webPreferences: {
-                            nodeIntegration: true,
-                            enableRemoteModule: true,
-                            contextIsolation: false,
-                        },
-                        // icon: path.join(__dirname, 'assets', 'img', 'icon.png'),
-                        // title: 'My App',
-                    });
-                    findwindow.removeMenu();
-                    findwindow.setTitle('Find...');
-                    findwindow.loadFile(path.join(__dirname, '../find/find.html'));
-                    ipcMain.on("search" , (event, txt) => {
-                        win.webContents.send("find" , txt)
-                    })
-                },
-                accelerator: "Ctrl + F",
-            },
+            // {
+            //     label: "Find",
+            //     click: () => {
+            //         const findwindow = new BrowserWindow({
+            //             height: 200,
+            //             width: 300,
+            //             webPreferences: {
+            //                 nodeIntegration: true,
+            //                 enableRemoteModule: true,
+            //                 contextIsolation: false,
+            //             },
+            //             // icon: path.join(__dirname, 'assets', 'img', 'icon.png'),
+            //             // title: 'My App',
+            //         });
+            //         findwindow.removeMenu();
+            //         findwindow.setTitle('Find...');
+            //         findwindow.loadFile(path.join(__dirname, '../find/find.html'));
+            //         ipcMain.on("search" , (event, txt) => {
+            //             win.webContents.send("find" , txt)
+            //         })
+            //     },
+            //     accelerator: "Ctrl + F",
+            // },
             {
                 type: "separator",
             },
@@ -375,46 +375,46 @@ const context_template = [
     {
         type: "separator",
     },
-    {
-        label: "Mark All",
-        accelerator: "Ctrl + M",
-        click: () => {
-            win.webContents.send("mark_sel" , null);
-        },
-    },
-    {
-        label: "Mark Color",
-        submenu: [
-            {
-                label: "Red",
-                click: () => {
-                    mark_color = "red";
-                    win.webContents.send("change_mark_color" , mark_color);
-                },
-            },
-            {
-                label: "Blue",
-                click: () => {
-                    mark_color = "blue";
-                    win.webContents.send("change_mark_color" , mark_color);
-                },
-            },
-            {
-                label: "Green",
-                click: () => {
-                    mark_color = "green";
-                    win.webContents.send("change_mark_color" , mark_color);
-                },
-            },
-            {
-                label: "Yellow",
-                click: () => {
-                    mark_color = "yellow";
-                    win.webContents.send("change_mark_color" , mark_color);
-                },
-            },
-        ],
-    },
+    // {
+    //     label: "Mark All",
+    //     accelerator: "Ctrl + M",
+    //     click: () => {
+    //         win.webContents.send("mark_sel" , null);
+    //     },
+    // },
+    // {
+    //     label: "Mark Color",
+    //     submenu: [
+    //         {
+    //             label: "Red",
+    //             click: () => {
+    //                 mark_color = "red";
+    //                 win.webContents.send("change_mark_color" , mark_color);
+    //             },
+    //         },
+    //         {
+    //             label: "Blue",
+    //             click: () => {
+    //                 mark_color = "blue";
+    //                 win.webContents.send("change_mark_color" , mark_color);
+    //             },
+    //         },
+    //         {
+    //             label: "Green",
+    //             click: () => {
+    //                 mark_color = "green";
+    //                 win.webContents.send("change_mark_color" , mark_color);
+    //             },
+    //         },
+    //         {
+    //             label: "Yellow",
+    //             click: () => {
+    //                 mark_color = "yellow";
+    //                 win.webContents.send("change_mark_color" , mark_color);
+    //             },
+    //         },
+    //     ],
+    // },
     {
         label: "Unmark All",
         click: () => {

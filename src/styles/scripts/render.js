@@ -1,7 +1,6 @@
 const fs = require('fs');
-const Mark = require('mark.js');
 const {ipcRenderer, shell} = require('electron');
-
+// const Mark = require('mark.js');
 
 
 
@@ -41,17 +40,17 @@ function search_goog() {
 }
 
 
-function find(text_find) {
-    const text = document.getElementById("textbox");
-    var marker = new Mark(text);
-    marker.mark(text_find);
-}
+// function find(text_find) {
+//     const text = document.getElementById("textbox");
+//     var marker = new Mark(text);
+//     marker.mark(text_find);
+// }
 
 
-function unmark() {
-    var marker = new Mark(document.getElementById("textbox"));
-    marker.unmark()
-}
+// function unmark() {
+//     var marker = new Mark(document.getElementById("textbox"));
+//     marker.unmark()
+// }
 
 
 function date_time() {
@@ -81,9 +80,9 @@ ipcRenderer.on('search_google', (event) => {
 });
 
 
-ipcRenderer.on("find" , (event, msg) => {
-    find(msg);
-});
+// ipcRenderer.on("find" , (event, msg) => {
+//     find(msg);
+// });
 
 
 ipcRenderer.on("select_all" , (event) => {
@@ -102,26 +101,26 @@ ipcRenderer.on("word_wrap" , (event) => {
 });
 
 
-ipcRenderer.on("mark_sel", () => {
-    const text = document.getSelection().toString();
-    find(text);
-});
+// ipcRenderer.on("mark_sel", () => {
+//     const text = document.getSelection().toString();
+//     find(text);
+// });
 
 
-ipcRenderer.on("unmark" , (event) => {
-    unmark();
-});
+// ipcRenderer.on("unmark" , (event) => {
+//     unmark();
+// });
 
 
-ipcRenderer.on("change_mark_color" , (event , color) => {
-    try{
-        document.querySelector("mark").style.background = color;
-        document.querySelector("mark").style.color = "black";
-    }
-    catch(err){
-        console.log(err);
-    };
-});
+// ipcRenderer.on("change_mark_color" , (event , color) => {
+//     try{
+//         document.querySelector("mark").style.background = color;
+//         document.querySelector("mark").style.color = "black";
+//     }
+//     catch(err){
+//         console.log(err);
+//     };
+// });
 
 
 ipcRenderer.on("toogle_status_bar" , (event) => {
