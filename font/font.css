@@ -1,0 +1,16 @@
+#size-drop {
+    padding-right: 20px;
+}
+
+.btn-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.option-div {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+}

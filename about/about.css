@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+}
+
+.div-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#img {
+    height: 50%;
+    width: auto;
+    position: fixed;
+}
+
+.div-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 35%;
+}
