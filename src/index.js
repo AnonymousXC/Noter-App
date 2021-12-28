@@ -415,13 +415,13 @@ const context_template = [
     //         },
     //     ],
     // },
-    {
-        label: "Unmark All",
-        click: () => {
-            win.webContents.send("unmark" , null);
-        },
-        accelerator: "Ctrl + U",
-    },
+    // {
+    //     label: "Unmark All",
+    //     click: () => {
+    //         win.webContents.send("unmark" , null);
+    //     },
+    //     accelerator: "Ctrl + U",
+    // },
 ];
 
 
