@@ -128,10 +128,14 @@ ipcRenderer.on("toogle_status_bar" , (event) => {
     const status_bar = document.getElementById("status-bar");
     const style = window.getComputedStyle(status_bar);
     const visibilty = style.getPropertyValue("visibility");
-    if(visibilty == "hidden")
+    if(visibilty == "hidden"){
         document.getElementById("status-bar").style.visibility = "visible";
-    else
+        document.getElementById("textbox").style.height = "97vh";
+    }
+    else {
         document.getElementById("status-bar").style.visibility = "hidden";
+        document.getElementById("textbox").style.height = "100vh";
+    }
 });
 
 

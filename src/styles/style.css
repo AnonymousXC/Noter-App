@@ -4,17 +4,19 @@
 }
 
 #textbox {
-    position: sticky;
-    height: 97vh;
+    height: 96vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #status-bar {
+    overflow: hidden;
     position: fixed;
-    height: 18px;
+    height: 26px;
     width: 100%;
     margin-bottom: 0px;
     background-color: rgb(218, 218, 218);
-    display: static;
+    display: flex;
 }
+
 
