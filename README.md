@@ -23,7 +23,7 @@
   </ul>
   <h2>More Projects</h2>
   <p>My Projects Are available on Itch.io. </p>
-  <img src="https://static.itch.io/images/badge-color.svg"> <br>
+  <a href="https://anonymousxcv.itch.io/"><img src="https://static.itch.io/images/badge-color.svg"></a> <br>
   <p>You can follow me on Itch.</p>
   <h2>About Me.</h2>
   <p>I am an</p>
