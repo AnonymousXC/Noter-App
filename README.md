@@ -11,5 +11,10 @@
   <h2>Noter App!</h2>
   <img src="./.github/images/ScreenShot-1.png"></img> <br>
   <img src="./.github/images/ScreenShot-2.png"></img> <br>
+  <p>Enriched With wide variety of Fonts.</p>
+  <h2>Features Coming Up.</h2>
+  <ul>
+  <li>HBFSDFHSDF</li>
+  </ul>
 </body>
 </html>
