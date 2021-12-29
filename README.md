@@ -16,7 +16,7 @@
   <img src="https://media.istockphoto.com/vectors/wip-sign-icon-vector-id972656200?b=1&k=20&m=972656200&s=170667a&w=0&h=rqsCXgx5LdAU9kbiecDdmNNHuKL9dqQ0pHNPf760Ub4=" alt="">
   <ul>
   <li>Themes</li>
-  <li>Custom Title Bar. img</li>
+  <li>Custom Title Bar.</li>
   <li>Better Navigation</li>
   <li>More Accessibility</li>
   <li>And Many More...</li>
