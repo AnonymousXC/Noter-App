@@ -14,7 +14,11 @@
   <p>Enriched With wide variety of Fonts.</p>
   <h2>Features Coming Up.</h2>
   <ul>
-  <li>HBFSDFHSDF</li>
+  <li>Themes</li>
+  <li>Custom Title Bar.</li>
+  <li>Better Navigation</li>
+  <li>More Accessibility</li>
+  <li>And Many More...</li>
   </ul>
 </body>
 </html>
